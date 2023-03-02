@@ -34,29 +34,3 @@ const verifiableCredential = await agent.createVerifiableCredential({
 })
 
 console.log(JSON.stringify(verifiableCredential, null, 2))
-
-/**
-
-{
-  "credentialSubject": {
-    "name": "Alice",
-    "id": "did:example:subject"
-  },
-  "issuer": {
-    "id": "did:ethr:0x03155ee0cbefeecd80de63a62b4ed8f0f97ac22a58f76a265903b9acab79bf018c"
-  },
-  "type": [
-    "VerifiableCredential",
-    "Example"
-  ],
-  "@context": [
-    "https://www.w3.org/2018/credentials/v1"
-  ],
-  "issuanceDate": "2023-03-02T17:37:40.000Z",
-  "proof": {
-    "type": "JwtProof2020",
-    "jwt": "eyJhbGciOiJFUzI1NksiLCJ0eXAiOiJKV1QifQ.eyJ2YyI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwiRXhhbXBsZSJdLCJjcmVkZW50aWFsU3ViamVjdCI6eyJuYW1lIjoiQWxpY2UifX0sInN1YiI6ImRpZDpleGFtcGxlOnN1YmplY3QiLCJuYmYiOjE2Nzc3Nzg2NjAsImlzcyI6ImRpZDpldGhyOjB4MDMxNTVlZTBjYmVmZWVjZDgwZGU2M2E2MmI0ZWQ4ZjBmOTdhYzIyYTU4Zjc2YTI2NTkwM2I5YWNhYjc5YmYwMThjIn0.C_xvmoIfKfKDDY-Kg6ncVjEizQALhj13QQxXe5iXMP1aJFwZMJYAkCfogSLmhomJ11KekkR3DhZJmgK8W1cJkQ"
-  }
-}
-
- */
