@@ -2,7 +2,8 @@
 	"type": "module",
 	"scripts": {
 		"issue-vc-ethr": "ts-node --esm ./src/ethr-issue-credential.ts",
-		"issue-vc-pkh": "ts-node --esm ./src/pkh-issue-credential.ts"
+		"issue-vc-pkh": "ts-node --esm ./src/pkh-issue-credential.ts",
+		"issue-vc-web": "ts-node --esm ./src/web-issue-credential.ts"
 	},
 	"dependencies": {
 		"@ethersproject/signing-key": "^5.7.0",
@@ -12,6 +13,7 @@
 		"@veramo/did-manager": "^5.1.2",
 		"@veramo/did-provider-ethr": "^5.1.2",
 		"@veramo/did-provider-pkh": "^5.1.2",
+		"@veramo/did-provider-web": "^5.1.2",
 		"@veramo/key-manager": "^5.1.2",
 		"@veramo/kms-local": "^5.1.2",
 		"ts-node": "^10.9.1",

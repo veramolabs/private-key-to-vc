@@ -8,6 +8,7 @@ specifiers:
   '@veramo/did-manager': ^5.1.2
   '@veramo/did-provider-ethr': ^5.1.2
   '@veramo/did-provider-pkh': ^5.1.2
+  '@veramo/did-provider-web': ^5.1.2
   '@veramo/key-manager': ^5.1.2
   '@veramo/kms-local': ^5.1.2
   ts-node: ^10.9.1
@@ -22,6 +23,7 @@ dependencies:
   '@veramo/did-manager': 5.1.2
   '@veramo/did-provider-ethr': 5.1.2
   '@veramo/did-provider-pkh': 5.1.2
+  '@veramo/did-provider-web': 5.1.2
   '@veramo/key-manager': 5.1.2
   '@veramo/kms-local': 5.1.2
   ts-node: 10.9.1_typescript@4.9.5
@@ -1014,6 +1016,16 @@ packages:
       caip: 1.1.0
       debug: 4.3.4
       did-resolver: 4.0.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@veramo/did-provider-web/5.1.2:
+    resolution: {integrity: sha512-5ZwgQgIfkQFJy6n4+o7nsPRvbWTP65O4ErxMZIQeGhYVcGr5Q6MJk9g+A4bGy/jdJEKzyzD7e1XWcjxJTPJT2w==}
+    dependencies:
+      '@veramo/core-types': 5.1.2
+      '@veramo/did-manager': 5.1.2
+      debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
     dev: false
