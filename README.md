@@ -67,3 +67,33 @@ pnpm issue-vc-ethr
   }
 }
 ```
+
+Issue Verifiable Credential using `did:web`  and `JwtProof2020` proof type
+
+```
+pnpm issue-vc-web
+```
+
+```json
+{
+  "credentialSubject": {
+    "name": "Alice",
+    "id": "did:example:subject"
+  },
+  "issuer": {
+    "id": "did:web:example.com"
+  },
+  "type": [
+    "VerifiableCredential",
+    "Example"
+  ],
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1"
+  ],
+  "issuanceDate": "2023-04-10T18:16:15.000Z",
+  "proof": {
+    "type": "JwtProof2020",
+    "jwt": "eyJhbGciOiJFUzI1NksiLCJ0eXAiOiJKV1QifQ.eyJ2YyI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwiRXhhbXBsZSJdLCJjcmVkZW50aWFsU3ViamVjdCI6eyJuYW1lIjoiQWxpY2UifX0sInN1YiI6ImRpZDpleGFtcGxlOnN1YmplY3QiLCJuYmYiOjE2ODExNTA1NzUsImlzcyI6ImRpZDp3ZWI6ZXhhbXBsZS5jb20ifQ.OcH2gRwIVymDePNR8mtLUL3GcZac0-0ohDHR39HarVsz4D62xCCWpNPai5nJqtyZIHrvbvmd236PQgLMnKc8VQ"
+  }
+}
+```
